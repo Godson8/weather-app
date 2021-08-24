@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo"><img src="/public/Left Nav.png" alt=""></div>
+                <div class="mobile-applications">
+                    <img src="/public/Google Play Badge.png">
+                    <img src="/public/App Store Badge.png">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <input type="text" placeholder="City, State or Country" class="form_input">
+                <button class="check_weather"><i class="fas fa-search "></i></button>
+            </form>
+            <div class="totalLocation"><p class="location"></p>&nbsp<span class="country_span"></span></div>
+            <p class="temperature"><span class="degree_measurement">--</span>°C</p>
+            <img class="weather_icon">
+            <p class="description"></p>
+        </main>
+    </div>
+    <script src="/src/script.js" defer></script>
+</body>
+</html>
